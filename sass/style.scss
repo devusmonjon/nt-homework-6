@@ -404,6 +404,58 @@
     }
 }
 
+.footer {
+    background-color: #f7eeec;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 30.1px 0;
+    }
+    &__lists {
+        display: flex;
+        gap: 123px;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5.02px;
+    }
+    &__link {
+        font-size: 17px;
+        color: #333;
+    }
+    .left {
+        display: flex;
+        gap: 194px;
+        .copy {
+            display: flex;
+            flex-direction: column;
+            gap: 20.06px;
+            align-items: flex-end;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+    .bottom {
+        padding: 7px 0;
+        display: flex;
+        justify-content: space-between;
+        p {
+            font-size: 14px;
+        }
+        div {
+            display: flex;
+            gap: 60px;
+        }
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         .navbar {
@@ -430,6 +482,17 @@
         .navbar {
             .search {
                 display: none;
+            }
+        }
+    }
+
+    .footer {
+        .bottom {
+            flex-direction: column;
+            gap: 10px;
+            div {
+                gap: 10px;
+                flex-direction: column;
             }
         }
     }
@@ -468,6 +531,17 @@
             .btn {
                 font-size: 17px;
             }
+        }
+    }
+
+    .footer {
+        &__content {
+            .left {
+                gap: 10px;
+            }
+        }
+        &__lists {
+            gap: 30px;
         }
     }
 }
@@ -514,6 +588,23 @@
                 font-size: 14px;
                 padding: 10px 20px;
             }
+        }
+    }
+
+    .footer {
+        &__content {
+            flex-direction: column;
+            gap: 30px;
+            .left {
+                width: 100%;
+                gap: initial;
+                justify-content: space-between;
+            }
+        }
+        &__lists {
+            width: 100%;
+            gap: initial;
+            justify-content: space-between;
         }
     }
 }
@@ -604,6 +695,30 @@
                     font-weight: 500;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        &__content {
+            .left {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 30px;
+                .copy {
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+        &__lists {
+            justify-content: initial;
+            flex-direction: column;
+            gap: 30px;
         }
     }
 }
