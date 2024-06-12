@@ -1,4 +1,4 @@
-// masala 1
+// masala 5
 // uchta son berilgan. Shu sonlar orasidan nechta musbat va nechta manfiy son borligini aniqlovchi funksiya tuzilsin
 function countPositiveNegative(a, b, c) {
     let musbatlarSoni = 0;
@@ -28,17 +28,17 @@ function countPositiveNegative(a, b, c) {
     };
 }
 
-// masala 2
+// masala 6
 function kattasiniAniqla(a, b) {
     return a > b ? a : b;
 }
 
-// masala 3
+// masala 7
 function kichiginiAniqla(a, b) {
     return a < b ? a : b;
 }
 
-// masala 4
+// masala 8
 function avvalKattaKeyinKichik(a, b) {
     if (a > b) {
         console.log(a, b);
@@ -47,7 +47,7 @@ function avvalKattaKeyinKichik(a, b) {
     }
 }
 
-// masala 5
+// masala 9
 function kichikKatta(a, b) {
     if (a < b) {
         console.log(a, b);
@@ -56,7 +56,7 @@ function kichikKatta(a, b) {
     }
 }
 
-// masala 6
+// masala 10
 function tengBoLmasaOzgartir(a, b) {
     if (a !== b) {
         let vaqtincha = a;
@@ -69,7 +69,7 @@ function tengBoLmasaOzgartir(a, b) {
     console.log(a, b);
 }
 
-// masala 7
+// masala 11
 function yigindiniOzgartir(a, b) {
     if (a !== b) {
         let yigindi = a + b;
@@ -80,33 +80,33 @@ function yigindiniOzgartir(a, b) {
     console.log(a, b);
 }
 
-// masala 8
+// masala 12
 function uchSonKichiginiAniqla(a, b, c) {
     return Math.min(a, b, c);
 }
 
-// masala 9
+// masala 13
 function ortachaniAniqla(a, b, c) {
     let sonlar = [a, b, c];
     sonlar.sort((x, y) => x - y);
     return sonlar[1];
 }
 
-// masala 10
+// masala 14
 function avvalKichikKeyinKatta(a, b, c) {
     let sonlar = [a, b, c];
     sonlar.sort((x, y) => x - y);
     console.log(sonlar[0], sonlar[2]);
 }
 
-// masala 11
+// masala 15
 function ikkitaEngKattasiniChiqaz(a, b, c) {
     let sonlar = [a, b, c];
     sonlar.sort((x, y) => y - x);
     console.log(sonlar[0] + sonlar[1]);
 }
 
-// masala 12
+// masala 16
 function oshiDavlatTartibda(a, b, c) {
     let sonlar = [a, b, c];
     if (sonlar[0] > sonlar[1] && sonlar[1] > sonlar[2]) {
@@ -115,7 +115,7 @@ function oshiDavlatTartibda(a, b, c) {
     console.log(sonlar);
 }
 
-// masala 13
+// masala 17
 function kamayishDavlatTartibda(a, b, c) {
     let sonlar = [a, b, c];
     if (sonlar[0] > sonlar[1] && sonlar[1] > sonlar[2]) {
@@ -124,7 +124,7 @@ function kamayishDavlatTartibda(a, b, c) {
     console.log(sonlar);
 }
 
-// masala 14
+// masala 18
 function tengJuftlikniTop(a, b, c) {
     if (a === b) return 1;
     if (a === c) return 1;
@@ -132,7 +132,7 @@ function tengJuftlikniTop(a, b, c) {
     return 2;
 }
 
-// masala 15
+// masala 19
 function uchTengJuftlikniTop(a, b, c, d) {
     if (a === b && b === c) return 1;
     if (a === b && b === d) return 1;
@@ -141,7 +141,7 @@ function uchTengJuftlikniTop(a, b, c, d) {
     return 2;
 }
 
-// masala 16
+// masala 20
 function engYaqinNuqtaniTop(A, B, C) {
     let masofaB = Math.sqrt(Math.pow(B.x - A.x, 2) + Math.pow(B.y - A.y, 2));
     let masofaC = Math.sqrt(Math.pow(C.x - A.x, 2) + Math.pow(C.y - A.y, 2));
